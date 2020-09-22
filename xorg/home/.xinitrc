@@ -28,11 +28,11 @@ fi
 # Configure displays
 autorandr -c &
 
+# Set wallpaper
+[[ -x "$HOME/.fehbg" ]] && "$HOME/.fehbg" &
+
 # Start compositor
 picom &
-
-# Set wallpaper
-[[ -x "$HOME/.fehbg" ]] && "$HOME/.fehbg";
 
 # Start conky
 conky &
