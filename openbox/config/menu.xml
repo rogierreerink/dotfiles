@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+
+	<menu id="main-more-creative" label="Creative">
+		<item label="Gimp">
+			<action name="Execute">
+				<command>gimp</command>
+			</action>
+		</item>
+		<item label="Inkscape">
+			<action name="Execute">
+				<command>inkscape</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-development" label="Development">
+		<item label="Arduino IDE">
+			<action name="Execute">
+				<command>arduino</command>
+			</action>
+		</item>
+		<item label="CCStudio">
+			<action name="Execute">
+				<command>ccstudio</command>
+			</action>
+		</item>
+		<item label="Code">
+			<action name="Execute">
+				<command>code</command>
+			</action>
+		</item>
+		<item label="Cura">
+			<action name="Execute">
+				<command>cura</command>
+			</action>
+		</item>
+		<item label="D-Feet">
+			<action name="Execute">
+				<command>d-feet</command>
+			</action>
+		</item>
+		<item label="Eagle">
+			<action name="Execute">
+				<command>eagle</command>
+			</action>
+		</item>
+		<item label="FreeCad">
+			<action name="Execute">
+				<command>freecad</command>
+			</action>
+		</item>
+		<item label="Gitkraken">
+			<action name="Execute">
+				<command>gitkraken</command>
+			</action>
+		</item>
+		<item label="iCEcube2">
+			<action name="Execute">
+				<command>icecube2</command>
+			</action>
+		</item>
+		<item label="KiCad">
+			<action name="execute">
+				<command>kicad</command>
+			</action>
+		</item>
+		<item label="MATLAB">
+			<action name="execute">
+				<command>matlab_run</command>
+			</action>
+		</item>
+		<item label="MPLAB IDE">
+			<action name="execute">
+				<command>mplab_ide</command>
+			</action>
+		</item>
+		<item label="MPLAB IPE">
+			<action name="execute">
+				<command>mplab_ipe</command>
+			</action>
+		</item>
+		<item label="OpenSCAD">
+			<action name="Execute">
+				<command>openscad</command>
+			</action>
+		</item>
+		<item label="Pulseview">
+			<action name="Execute">
+				<command>pulseview</command>
+			</action>
+		</item>
+		<item label="STM32CubeIDE">
+			<action name="Execute">
+				<command>stm32cubeide</command>
+			</action>
+		</item>
+		<item label="VirtualBox">
+			<action name="Execute">
+				<command>virtualbox</command>
+			</action>
+		</item>
+		<item label="Visual Paradigm">
+			<action name="Execute">
+				<command>Visual_Paradigm</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-gaming" label="Gaming">
+		<item label="0ad">
+			<action name="execute">
+				<command>0ad</command>
+			</action>
+		</item>
+		<item label="Minecraft">
+			<action name="execute">
+				<command>minecraft-launcher</command>
+			</action>
+		</item>
+		<item label="RuneScape">
+			<action name="Execute">
+				<command>runescape-launcher</command>
+			</action>
+		</item>
+		<item label="SuperTux">
+			<action name="Execute">
+				<command>supertux2</command>
+			</action>
+		</item>
+		<item label="SuperTuxKart">
+			<action name="Execute">
+				<command>supertuxkart</command>
+			</action>
+		</item>
+		<item label="Steam">
+			<action name="Execute">
+				<command>steam</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-multimedia" label="Multimedia">
+		<item label="Cantata">
+			<action name="Execute">
+				<command>cantata</command>
+			</action>
+		</item>
+		<item label="Kodi">
+			<action name="Execute">
+				<command>kodi</command>
+			</action>
+		</item>
+		<item label="Picard">
+			<action name="Execute">
+				<command>picard</command>
+			</action>
+		</item>
+		<item label="Tidal">
+			<action name="Execute">
+				<command>tidal-hifi</command>
+			</action>
+		</item>
+		<item label="VideoLAN">
+			<action name="Execute">
+				<command>vlc</command>
+			</action>
+		</item>
+		<item label="VueScan">
+			<action name="Execute">
+				<command>vuescan</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-network" label="Network">
+		<item label="Chromium">
+			<action name="Execute">
+				<command>chromium</command>
+			</action>
+		</item>
+		<item label="Discord">
+			<action name="Execute">
+				<command>discord</command>
+			</action>
+		</item>
+		<item label="FileZilla">
+			<action name="Execute">
+				<command>filezilla</command>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<command>firefox</command>
+			</action>
+		</item>
+		<item label="Putty">
+			<action name="Execute">
+				<command>putty</command>
+			</action>
+		</item>
+		<item label="Skype">
+			<action name="Execute">
+				<command>skypeforlinux</command>
+			</action>
+		</item>
+		<item label="Teams">
+			<action name="Execute">
+				<command>teams</command>
+			</action>
+		</item>
+		<item label="Transmission">
+			<action name="Execute">
+				<command>transmission-gtk</command>
+			</action>
+		</item>
+		<item label="Transmission Remote">
+			<action name="Execute">
+				<command>transmission-remote-gtk</command>
+			</action>
+		</item>
+		<item label="Wireshark">
+			<action name="Execute">
+				<command>wireshark</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-office" label="Office">
+		<item label="LibreOffice Writer">
+			<action name="Execute">
+				<command>libreoffice --writer</command>
+			</action>
+		</item>
+		<item label="LibreOffice Calc">
+			<action name="Execute">
+				<command>libreoffice --calc</command>
+			</action>
+		</item>
+		<item label="LibreOffice Draw">
+			<action name="Execute">
+				<command>libreoffice --draw</command>
+			</action>
+		</item>
+		<item label="LibreOffice Impress">
+			<action name="Execute">
+				<command>libreoffice --impress</command>
+			</action>
+		</item>
+	</menu>
+
+	<menu id="main-more-applications" label="More">
+		<menu id="main-more-creative"/>
+		<menu id="main-more-development"/>
+		<menu id="main-more-gaming"/>
+		<menu id="main-more-multimedia"/>
+		<menu id="main-more-network"/>
+		<menu id="main-more-office"/>
+	</menu>
+
+	<menu id="main" label="Main menu">
+
+		<separator label="Applications"/>
+		<item label="Web browser">
+			<action name="Execute">
+				<command>firefox</command>
+			</action>
+		</item>
+		<item label="Terminal">
+			<action name="Execute">
+				<command>xfce4-terminal</command>
+			</action>
+		</item>
+		<item label="Code">
+			<action name="Execute">
+				<command>code</command>
+			</action>
+		</item>
+		<item label="Calculator">
+			<action name="Execute">
+				<command>galculator</command>
+			</action>
+		</item>
+		<item label="File browser">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
+		<item label="Mailbox">
+			<action name="Execute">
+				<command>thunderbird</command>
+			</action>
+		</item>
+		<menu id="main-more-applications"/>
+		
+		<separator label="System info"/>
+		<menu id="genmenu-battery" label="Battery" execute="~/.config/openbox/pipe/battery.sh"/>
+		<menu id="genmenu-servers" label="Servers" execute="~/.config/openbox/pipe/servers.sh"/>
+
+		<separator label="System control"/>
+		<item label="Lock">
+			<action name="Execute">
+				<command>slock</command>
+			</action>
+		</item>
+		<item label="Suspend">
+			<action name="Execute">
+				<command>systemctl suspend</command>
+			</action>
+		</item>
+		<item label="Hibernate">
+			<action name="Execute">
+				<command>systemctl hibernate</command>
+			</action>
+		</item>
+		<item label="Reboot">
+			<action name="Execute">
+				<command>systemctl reboot</command>
+			</action>
+		</item>
+		<item label="Power off">
+			<action name="Execute">
+				<command>systemctl poweroff</command>
+			</action>
+		</item>
+	</menu>
+
+</openbox_menu>
+
