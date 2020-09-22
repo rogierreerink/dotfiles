@@ -7,12 +7,14 @@ SRC=(
 #	"$PWD/local/bin/rofi"
 #	"$PWD/local/share"
 #	"$PWD/config"
+#	"$PWD/home"
 )
 
 DST=(
 #	"$HOME/.local/bin/rofi"
 #	"$HOME/.local/share/rofi"
 #	"$HOME/.config/rofi"
+#	"$HOME/rofi"
 )
 
 for (( i=0; i < ${#SRC[@]}; i++ )); do
