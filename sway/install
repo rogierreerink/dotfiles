@@ -1,6 +1,8 @@
 #!/bin/sh
 # Sway dotfile installer
 
+PWD="$PWD/$(dirname ${0})"
+
 SRC=(
 	"$PWD/config"
 )
@@ -22,7 +24,7 @@ for (( i=0; i < ${#SRC[@]}; i++ )); do
 	# Create destination base directory if non-existent
 	mkdir -p $(dirname ${DST_I})
 	
-	# Remove destination if it exists
+	# Remove destination path if it exists
 	if [ -e $DST_I ]; then
 		rm -r $DST_I;
 	fi
@@ -34,4 +36,3 @@ for (( i=0; i < ${#SRC[@]}; i++ )); do
 	echo "Installed '$SRC_I' -> '$DST_I'";
 
 done
-

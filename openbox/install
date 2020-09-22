@@ -1,6 +1,8 @@
 #!/bin/sh
 # Openbox dotfile installer
 
+PWD="$PWD/$(dirname ${0})"
+
 SRC=(
 	"$PWD/config"
 )
@@ -19,15 +21,14 @@ for (( i=0; i < ${#SRC[@]}; i++ )); do
 		continue;
 	fi
 
-	# Check whether destination link exists
-	if [ -e $DST_I ]; then
-		echo "Skipped '$SRC_I' -> '$DST_I'";
-		continue;
-	fi
-
-	# Create destination base directory if nonexistant
+	# Create destination base directory if non-existent
 	mkdir -p $(dirname ${DST_I})
 	
+	# Remove destination path if it exists
+	if [ -e $DST_I ]; then
+		rm -r $DST_I;
+	fi
+
 	# Create symbolic link to source
 	ln -sf $SRC_I $DST_I;
 	
@@ -35,4 +36,3 @@ for (( i=0; i < ${#SRC[@]}; i++ )); do
 	echo "Installed '$SRC_I' -> '$DST_I'";
 
 done
-
