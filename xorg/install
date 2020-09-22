@@ -1,5 +1,5 @@
 #!/bin/sh
-# Template dotfile installer
+# Xorg dotfile installer
 
 PWD="$PWD/$(dirname ${0})"
 
