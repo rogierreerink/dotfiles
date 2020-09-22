@@ -1,0 +1,38 @@
+#!/bin/sh
+# Waybar dotfile installer
+
+SRC=(
+	"$PWD/config"
+)
+
+DST=(
+	"$HOME/.config/waybar"
+)
+
+for (( i=0; i < ${#SRC[@]}; i++ )); do
+
+	SRC_I=${SRC[$i]}
+	DST_I=${DST[$i]}
+
+	# Check whether source exists
+	if [ ! -e $SRC_I ]; then
+		continue;
+	fi
+
+	# Check whether destination link exists
+	if [ -e $DST_I ]; then
+		echo "Skipped '$SRC_I' -> '$DST_I'";
+		continue;
+	fi
+
+	# Create destination base directory if nonexistant
+	mkdir -p $(dirname ${DST_I})
+	
+	# Create symbolic link to source
+	ln -sf $SRC_I $DST_I;
+	
+	# Print success message
+	echo "Installed '$SRC_I' -> '$DST_I'";
+
+done
+

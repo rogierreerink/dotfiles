@@ -1,0 +1,103 @@
+
+//	 _	_	__	 _	_  ____   __   ____		___  __   __ _	____  __  ___ 
+//	/ )( \ / _\ ( \/ )(  _ \ / _\ (  _ \   / __)/  \ (	( \(  __)(	)/ __)
+//	\ /\ //    \ )	/  ) _ (/	 \ )   /  ( (__(  O )/	  / ) _)  )(( (_ \
+//	(_/\_)\_/\_/(__/  (____/\_/\_/(__\_)   \___)\__/ \_)__)(__)  (__)\___/
+//
+
+{
+//	"layer": "top",
+	"position": "bottom",
+//	"height": 32,
+//	"width": 32,
+
+	"modules-left": [
+		"sway/workspaces",
+		"sway/mode",
+		"custom/media"
+	],
+
+	"modules-center": [
+	],
+
+	"modules-right": [
+		"custom/geolocation",
+		"network",
+		"backlight",
+		"pulseaudio#sink",
+		"pulseaudio#source",
+		"battery",
+		"clock"
+	],
+
+	"sway/workspaces": {
+		"disable-scroll": true
+	},
+
+	"sway/mode": {
+		"format": "<span style=\"italic\">{}</span>"
+	},
+
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		},
+		"tooltip": false
+	},
+
+	"clock": {
+		"format": " {:%H:%M}",
+		"tooltip": false
+	},
+
+	"backlight": {
+		"format": " {percent}%",
+		"tooltip": false
+	},
+
+	"battery": {
+		"format": "{icon} {capacity}% ({time})",
+		"format-charging": " {capacity}% ({time})",
+		"format-plugged": " {capacity}%",
+		"format-icons": ["", "", "", "", ""],
+		"tooltip": false
+	},
+
+	"custom/geolocation": {
+		"exec": "geolocation",
+		"interval": 300,
+		"format": " {}"
+	},
+
+	"network": {
+		"format-wifi": " {essid}",
+		"format-disconnected": " disconnected",
+		"format-alt": " {ipaddr}",
+		"tooltip": false
+	},
+
+	"pulseaudio#sink": {
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+		"format-bluetooth": " {volume}%",
+		"format-bluetooth-muted": " {volume}% (muted)",
+		"format-icons": {
+			"default": ["","",""]
+		},
+		"scroll-step": 0,
+		"on-click": "pavucontrol -t 3",
+		"tooltip": false
+	},
+
+	"pulseaudio#source": {
+		"format": "{format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": " {volume}%",
+		"scroll-step": 0,
+		"on-click": "pavucontrol -t 4",
+		"tooltip": false
+	}
+}
+

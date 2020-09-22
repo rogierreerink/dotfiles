@@ -1,0 +1,60 @@
+
+/*	 _	_	__	 _	_  ____   __   ____		___  __   __ _	____  __  ___ 
+ *	/ )( \ / _\ ( \/ )(  _ \ / _\ (  _ \   / __)/  \ (	( \(  __)(	)/ __)
+ *	\ /\ //    \ )	/  ) _ (/	 \ )   /  ( (__(  O )/	  / ) _)  )(( (_ \
+ *	(_/\_)\_/\_/(__/  (____/\_/\_/(__\_)   \___)\__/ \_)__)(__)  (__)\___/
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	font-family: "Font Awesome 5 Free Solid", monospace;
+	font-size: 16px;
+	color: rgba(255,255,255,0.8);
+}
+
+window#waybar {
+	background-color: rgba(0,0,0,0);
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+}
+
+window#waybar box {
+	margin: 0 15px 16px;
+}
+
+window#waybar box box {
+	margin: 0;
+}
+
+window#waybar box box widget {
+	margin: 0 1px;
+}
+
+window#waybar label,
+window#waybar button label {
+	padding: 12px 8px;
+	margin: 0 1px;
+	background-color: rgba(0,0,0,0.2);
+	border-bottom: 4px solid rgba(0,0,0,0.3);
+}
+
+window#waybar button {
+	margin: 0 1px;
+}
+
+window#waybar button label {
+	margin: 0;
+}
+
+window#waybar button:hover {
+	background-color: rgba(255,255,255,0.25);
+	background-image: none;
+	box-shadow: none;
+}
+
+window#waybar button.focused label {
+	background-color: rgba(255,50,80,0.8);
+}
+
