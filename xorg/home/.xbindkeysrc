@@ -1,0 +1,49 @@
+#
+# ~/.xbindkeysrc
+#
+
+# Display
+"backlight-preset -inc"
+	Mod4 + XF86MonBrightnessUp
+"backlight-preset -dec"
+	Mod4 + XF86MonBrightnessDown
+"xbacklight -inc 5"
+	XF86MonBrightnessUp
+"xbacklight -inc 5"
+	Alt + b:4
+"xbacklight -dec 5"
+	XF86MonBrightnessDown
+"xbacklight -dec 5"
+	Alt + b:5
+"autorandr -c && ~/.fehbg && killall -SIGUSR1 conky"
+	XF86Display
+
+# Audio
+"pamixer -i 2"
+	XF86AudioRaiseVolume
+"pamixer -i 2"
+	Mod4 + b:4
+"pamixer -d 2"
+	XF86AudioLowerVolume
+"pamixer -d 2"
+	Mod4 + b:5
+"pamixer -t"
+	XF86AudioMute
+"pamixer --default-source -t"
+	XF86AudioMicMute
+
+# Applications
+"code"
+	Mod4 + c
+"firefox"
+	Mod4 + w
+"rofi -show run"
+	Mod4 + space
+"thunar"
+	Mod4 + f
+"thunderbird"
+	Mod4 + m
+"xfce4-screenshooter"
+	Print
+"xfce4-terminal"
+	Mod4 + t
