@@ -1,0 +1,171 @@
+#   ____  _  _   __   _  _     ___  __   __ _  ____  __  ___ 
+#  / ___)/ )( \ / _\ ( \/ )   / __)/  \ (  ( \(  __)(  )/ __)
+#  \___ \\ /\ //    \ )  /   ( (__(  O )/    / ) _)  )(( (_ \
+#  (____/(_/\_)\_/\_/(__/     \___)\__/ \_)__)(__)  (__)\___/
+# 
+
+# Special Keys
+
+set $mod Mod4
+set $alt Alt
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Bemenu Config
+
+set $bemenu_font "monospace 14"
+set $bemenu_config --fn $bemenu_font -l 24 -p ">" \
+	--tb=#000000E6 \
+	--fb=#000000E6 \
+	--nb=#000000E6 \
+	--hb=#000000E6 --hf=#FF3250CC \
+	--sb=#000000E6 \
+	--scb=#000000E6
+
+# Application Key Bindings
+
+bindsym $alt+Return exec alacritty
+bindsym $mod+Return exec alacritty
+bindsym $mod+Space exec bemenu-run $bemenu_config | swaymsg exec --
+bindsym $mod+f exec alacritty -e ranger
+bindsym $mod+w exec firefox
+bindsym $mod+m exec thunderbird
+bindsym $mod+c exec code
+
+bindsym Print exec grim -g "$(slurp -f '%x,%y %wx%h')" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png
+
+bindsym XF86AudioMute exec pamixer -t
+bindsym XF86AudioLowerVolume exec pamixer -d 5
+bindsym XF86AudioRaiseVolume exec pamixer -i 5
+bindsym XF86AudioMicMute exec pamixer --default-source -t
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+
+# Interaction Key Bindings
+
+bindsym $alt+q kill
+bindsym $alt+Shift+c reload
+bindsym $alt+Shift+e exec swaymsg exit
+
+bindsym $alt+$left focus left
+bindsym $alt+$down focus down
+bindsym $alt+$up focus up
+bindsym $alt+$right focus right
+bindsym $alt+Left focus left
+bindsym $alt+Down focus down
+bindsym $alt+Up focus up
+bindsym $alt+Right focus right
+
+bindsym $alt+Shift+$left move left
+bindsym $alt+Shift+$down move down
+bindsym $alt+Shift+$up move up
+bindsym $alt+Shift+$right move right
+bindsym $alt+Shift+Left move left
+bindsym $alt+Shift+Down move down
+bindsym $alt+Shift+Up move up
+bindsym $alt+Shift+Right move right
+
+bindsym $alt+1 workspace 1
+bindsym $alt+2 workspace 2
+bindsym $alt+3 workspace 3
+bindsym $alt+4 workspace 4
+bindsym $alt+5 workspace 5
+bindsym $alt+6 workspace 6
+bindsym $alt+7 workspace 7
+bindsym $alt+8 workspace 8
+bindsym $alt+9 workspace 9
+bindsym $alt+0 workspace 10
+
+bindsym $alt+Shift+1 move container to workspace 1
+bindsym $alt+Shift+2 move container to workspace 2
+bindsym $alt+Shift+3 move container to workspace 3
+bindsym $alt+Shift+4 move container to workspace 4
+bindsym $alt+Shift+5 move container to workspace 5
+bindsym $alt+Shift+6 move container to workspace 6
+bindsym $alt+Shift+7 move container to workspace 7
+bindsym $alt+Shift+8 move container to workspace 8
+bindsym $alt+Shift+9 move container to workspace 9
+bindsym $alt+Shift+0 move container to workspace 10
+
+bindsym $alt+b splith
+bindsym $alt+v splitv
+
+bindsym $alt+s layout stacking
+bindsym $alt+t layout tabbed
+bindsym $alt+e toggle split
+bindsym $alt+f fullscreen
+
+floating_modifier $alt normal
+bindsym $alt+space floating toggle
+bindsym $alt+Shift+space focus mode_toggle
+bindsym $alt+a focus parent
+
+bindsym $alt+minus move scratchpad
+bindsym $alt+plus scratchpad show
+
+# Resize Key Bindings
+
+mode "resize" {
+
+	bindsym $left resize shrink width 10px
+	bindsym $down resize shrink height 10px
+	bindsym $up resize grow height 10px
+	bindsym $right resize grow width 10px
+	bindsym Left resize shrink width 10px
+	bindsym Down resize shrink height 10px
+	bindsym Up resize grow height 10px
+	bindsym Right resize grow width 10px
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $alt+r mode "resize"
+
+# Idle/Sleep/Resume
+
+exec swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep 'swaylock -f -c 000000'
+
+# Monitors
+
+output eDP-1 scale 1
+output HDMI-1 scale 1
+
+# Input Devices
+
+input "1739:0:Synaptics_TM3289-021" {
+	dwt enabled
+	tap enabled
+}
+
+# Appearance
+
+output * bg #002448 solid_color
+
+gaps inner 16px
+#gaps outer 0px
+
+default_border none
+#for_window [app_id="^.*"] border pixel 4
+#for_window [class="^.*"] border pixel 4
+
+# border, bg, text, indicator, child_border
+#client.focused #000000 #000000 #ffffffff #000000 #000000
+#client.focused_inactive #000000 #000000 #ffffffff #000000 #000000
+#client.unfocused #000000 #000000 #ffffffff #000000 #000000
+
+# Status Bar
+
+bar {
+	swaybar_command waybar
+}
+
+# Includes
+
+include /etc/sway/config.d/*
+
