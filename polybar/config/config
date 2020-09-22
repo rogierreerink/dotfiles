@@ -1,0 +1,47 @@
+;   ____   __   __    _  _  ____   __   ____     ___  __   __ _  ____  __  ___ 
+;  (  _ \ /  \ (  )  ( \/ )(  _ \ / _\ (  _ \   / __)/  \ (  ( \(  __)(  )/ __)
+;   ) __/(  O )/ (_/\ )  /  ) _ (/    \ )   /  ( (__(  O )/    / ) _)  )(( (_ \
+;  (__)   \__/ \____/(__/  (____/\_/\_/(__\_)   \___)\__/ \_)__)(__)  (__)\___/
+;
+
+[settings]
+format-foreground = #FFFFFFFF
+format-background = #EE000000
+format-underline =
+format-overline =
+format-spacing = 1
+format-padding = 1
+format-margin = 1
+format-offset = 0
+
+[bar/main]
+bottom = true
+width = 100%
+height = 32
+background = #00000000
+foreground = #FFFFFFFF
+border-size = 1
+border-color = #00000000
+padding-left = 1
+padding-right = 1
+module-margin-left = 0
+module-margin-right = 0
+font-0 = monospace:pixelsize=14
+font-1 = Font Awesome 5 Free Solid:pixelsize=14
+font-2 = Font Awesome 5 Free Regular:pixelsize=14
+modules-left =
+modules-center = 
+modules-right = pulseaudio backlight
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/pulseaudio]
+type = internal/pulseaudio
+label-volume =  %percentage%
+label-muted =  %percentage% 
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+label =  %percentage% 
+
