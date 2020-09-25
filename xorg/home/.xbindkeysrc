@@ -3,33 +3,33 @@
 #
 
 # Display
-"backlight-preset -inc"
+"backlight-preset -inc; notify-backlight"
 	Mod4 + XF86MonBrightnessUp
-"backlight-preset -dec"
+"backlight-preset -dec; notify-backlight"
 	Mod4 + XF86MonBrightnessDown
-"xbacklight -inc 5"
+"xbacklight -inc 5; notify-backlight"
 	XF86MonBrightnessUp
-"xbacklight -inc 5"
+"xbacklight -inc 5; notify-backlight"
 	Alt + b:4
-"xbacklight -dec 5"
+"xbacklight -dec 5; notify-backlight"
 	XF86MonBrightnessDown
-"xbacklight -dec 5"
+"xbacklight -dec 5; notify-backlight"
 	Alt + b:5
 "autorandr -c && ~/.fehbg && killall -SIGUSR1 conky"
 	XF86Display
 
 # Audio
-"pamixer -i 2"
+"pamixer -i 2; notify-volume"
 	XF86AudioRaiseVolume
-"pamixer -i 2"
+"pamixer -i 2; notify-volume"
 	Mod4 + b:4
-"pamixer -d 2"
+"pamixer -d 2; notify-volume"
 	XF86AudioLowerVolume
-"pamixer -d 2"
+"pamixer -d 2; notify-volume"
 	Mod4 + b:5
-"pamixer -t"
+"pamixer -t; notify-volume"
 	XF86AudioMute
-"pamixer --default-source -t"
+"pamixer --default-source -t; notify-microphone"
 	XF86AudioMicMute
 
 # Applications
