@@ -19,13 +19,13 @@
 	XF86Display
 
 # Audio
-"pamixer -i 2; notify-volume"
+"pamixer -i 5; notify-volume"
 	XF86AudioRaiseVolume
-"pamixer -i 2; notify-volume"
+"pamixer -i 5; notify-volume"
 	Mod4 + b:4
-"pamixer -d 2; notify-volume"
+"pamixer -d 5; notify-volume"
 	XF86AudioLowerVolume
-"pamixer -d 2; notify-volume"
+"pamixer -d 5; notify-volume"
 	Mod4 + b:5
 "pamixer -t; notify-volume"
 	XF86AudioMute
