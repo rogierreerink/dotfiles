@@ -17,6 +17,8 @@
 	Alt + b:5
 "autorandr -c && ~/.fehbg && killall -SIGUSR1 conky"
 	XF86Display
+"~/.fehbg"
+	XF86Favorites
 
 # Audio
 "pamixer -i 5; notify-volume"
