@@ -1,5 +1,5 @@
 #!/bin/sh
 # Application alias
 
-/usr/bin/rofi -config "$HOME/.config/rofi/themes/warm.rasi" $@
+/usr/bin/rofi -config "$HOME/.config/rofi/themes/config.rasi" $@
 
