@@ -4,11 +4,11 @@
 PWD="$PWD/$(dirname ${0})"
 
 SRC=(
-	"$PWD/etc/oh-my-zsh/themes/mrtazz-pink.zsh-theme"
+	"$PWD/etc/oh-my-zsh/themes/supermainframe.zsh-theme"
 )
 
 DST=(
-	"/etc/oh-my-zsh/themes/mrtazz-pink.zsh-theme"
+	"/etc/oh-my-zsh/themes/supermainframe.zsh-theme"
 )
 
 for (( i=0; i < ${#SRC[@]}; i++ )); do
