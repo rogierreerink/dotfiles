@@ -1,0 +1,38 @@
+#!/bin/sh
+# Oh-my-zsh dotfile installer
+
+PWD="$PWD/$(dirname ${0})"
+
+SRC=(
+	"$PWD/etc/oh-my-zsh/themes/mrtazz-pink.zsh-theme"
+)
+
+DST=(
+	"/etc/oh-my-zsh/themes/mrtazz-pink.zsh-theme"
+)
+
+for (( i=0; i < ${#SRC[@]}; i++ )); do
+
+	SRC_I=${SRC[$i]}
+	DST_I=${DST[$i]}
+
+	# Check whether source exists
+	if [ ! -e $SRC_I ]; then
+		continue;
+	fi
+
+	# Create destination base directory if non-existent
+	mkdir -p $(dirname ${DST_I})
+	
+	# Remove destination path if it exists
+	if [ -e $DST_I ]; then
+		rm -r $DST_I;
+	fi
+
+	# Create symbolic link to source
+	ln -sf $SRC_I $DST_I;
+	
+	# Print success message
+	echo "Installed '$SRC_I' -> '$DST_I'";
+
+done
