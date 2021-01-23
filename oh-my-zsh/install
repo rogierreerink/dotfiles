@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Oh-my-zsh dotfile installer
 
 PWD="$PWD/$(dirname ${0})"
