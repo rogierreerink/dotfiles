@@ -6,12 +6,14 @@ PWD="$PWD/$(dirname ${0})"
 SRC=(
 	"$PWD/home/.xbindkeysrc"
 	"$PWD/home/.xinitrc"
+	"$PWD/home/.xinitrc_after"
 	"$PWD/home/.Xresources"
 )
 
 DST=(
 	"$HOME/.xbindkeysrc"
 	"$HOME/.xinitrc"
+	"$HOME/.xinitrc_after"
 	"$HOME/.Xresources"
 )
 

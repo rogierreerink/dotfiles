@@ -35,17 +35,17 @@
 	XF86AudioMicMute
 
 # Applications
-"code"
-	Mod4 + c
-"firefox"
-	Mod4 + w
+#"code"
+#	Mod4 + c
+#"firefox"
+#	Mod4 + w
 "rofi -show run"
 	Mod4 + space
-"thunar"
-	Mod4 + f
-"thunderbird"
-	Mod4 + m
+#"thunar"
+#	Mod4 + f
+#"thunderbird"
+#	Mod4 + m
 "xfce4-screenshooter"
-	Print
-"xfce4-terminal"
-	Mod4 + t
+	Shift + Mod4 + Shift_L
+#"xfce4-terminal"
+#	Mod4 + t

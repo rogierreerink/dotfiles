@@ -9,4 +9,3 @@ zstyle :compinstall filename '/home/rogvis/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-alias ls=exa

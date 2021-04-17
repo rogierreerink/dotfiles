@@ -1,0 +1,11 @@
+#!/bin/bash
+# Commands to run after X has properly started.
+
+# Configure xrandr
+autorandr -c &
+
+# Set wallpaper
+[[ -x "$HOME/.fehbg" ]] && "$HOME/.fehbg" &
+
+# Start conky
+#conky &

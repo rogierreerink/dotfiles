@@ -7,8 +7,8 @@
 [[ -d "$HOME/.cargo/bin" ]] && export PATH="$HOME/.cargo/bin:$PATH"
 
 # Start xsession
-[[ "$(tty)" = "/dev/tty1" ]] &&	exec startx
+[[ "$(tty)" = "/dev/tty1" ]] && exec startx -- vt1 &> /dev/null
 
 # Start wayland
-#[[ "$(tty)" = "/dev/tty1" ]] && exec sway
+#[[ "$(tty)" = "/dev/tty1" ]] && exec sway -- vt1 &> /dev/null
 
