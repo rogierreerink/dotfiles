@@ -4,8 +4,11 @@
 # Configure xrandr
 autorandr -c &
 
-# Start conky
-conky &
-
 # Set wallpaper
 [[ -x "$HOME/.fehbg" ]] && "$HOME/.fehbg" &
+
+# Wait even longer to start...
+sleep 3
+
+# Start conky
+conky &
