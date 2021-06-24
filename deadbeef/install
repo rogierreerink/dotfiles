@@ -1,5 +1,5 @@
 #!/bin/sh
-# Deadbeef dotfile installer
+# DeaDBeeF dotfile installer
 
 PWD="$PWD/$(dirname ${0})"
 

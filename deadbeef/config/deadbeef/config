@@ -23,7 +23,7 @@ filebrowser.coverart_files cover.jpg;folder.jpg;front.jpg
 filebrowser.coverart_size 24
 filebrowser.defaultpath 
 filebrowser.enabled 1
-filebrowser.expanded_rows file:///home/rogvis/Music/Album/Sufjan%20Stevens/Carrie%20&%20Lowell file:///home/rogvis/Music/Album/Nubiyan%20Twist/Freedom%20Fables%20%5B153479345%5D%20%5B2021%5D file:///home/rogvis/Music/MA%20Recordings/The%20MA%20Recordings%20Audiophiliac%20HiRez%20Music%20Sampler%202020 file:///home/rogvis/Music file:///home/rogvis/Music/Album/Com%20Truise/Galactic%20Melt%20%5B21583146%5D%20%5B2011%5D file:///home/rogvis/Music/Album/LCD%20Soundsystem/%5BME%5D%20%20LCD%20Soundsystem%20%5B1413347%5D%20%5B2005%5D/CD1 file:///home/rogvis/Music/Album/Oracle%20Sisters/Paris%20I%20%5B141392193%5D%20%5B2020%5D file:///home/rogvis/Music/Album/Santana/Caravanserai%20%5B29280237%5D%20%5B1972%5D file:///home/rogvis/Music/Album/Lee%20Ritenour/%5BM%5D%20%20Dreamcatcher%20%5B163211077%5D%20%5B2020%5D file:///home/rogvis/Music/Album/Chet%20Baker/%5BM%5D%20%20In%20New%20York%20(Hi%20Res%20%5B192-24%5D)%20%5B175019081%5D%20%5B1958%5D file:///home/rogvis/Music/Album/Frank%20Sinatra/%5BM%5D%20%20Sings%20For%20Only%20The%20Lonely%20(2018%20Stereo%20Mix)%20%5B96633985%5D%20%5B1958%5D file:///home/rogvis/Music/Album/George%20Benson/%5BM%5D%20%20Giblet%20Gravy%20(Expanded%20Edition)%20%5B94441858%5D%20%5B1968%5D file:///home/rogvis/Music/Album/George%20Benson/%5BM%5D%20%20Breezin'%20%5B68618192%5D%20%5B1976%5D file:///home/rogvis/Music/Album/Philip%20Glass/%5BM%5D%20%20Kundun%20%5B380866%5D%20%5B1997%5D
+filebrowser.expanded_rows file:///home/rogvis/Music/Album/Sufjan%20Stevens/Carrie%20&%20Lowell file:///home/rogvis/Music/Album/Nubiyan%20Twist/Freedom%20Fables%20%5B153479345%5D%20%5B2021%5D file:///home/rogvis/Music file:///home/rogvis/Music/Album/Com%20Truise/Galactic%20Melt%20%5B21583146%5D%20%5B2011%5D file:///home/rogvis/Music/Album/LCD%20Soundsystem/%5BME%5D%20%20LCD%20Soundsystem%20%5B1413347%5D%20%5B2005%5D/CD1 file:///home/rogvis/Music/Album/Oracle%20Sisters/Paris%20I%20%5B141392193%5D%20%5B2020%5D file:///home/rogvis/Music/Album/Santana/Caravanserai%20%5B29280237%5D%20%5B1972%5D file:///home/rogvis/Music/Album/Lee%20Ritenour/%5BM%5D%20%20Dreamcatcher%20%5B163211077%5D%20%5B2020%5D file:///home/rogvis/Music/Album/Chet%20Baker/%5BM%5D%20%20In%20New%20York%20(Hi%20Res%20%5B192-24%5D)%20%5B175019081%5D%20%5B1958%5D file:///home/rogvis/Music/Album/Frank%20Sinatra/%5BM%5D%20%20Sings%20For%20Only%20The%20Lonely%20(2018%20Stereo%20Mix)%20%5B96633985%5D%20%5B1958%5D file:///home/rogvis/Music/Album/George%20Benson/%5BM%5D%20%20Giblet%20Gravy%20(Expanded%20Edition)%20%5B94441858%5D%20%5B1968%5D file:///home/rogvis/Music/Album/George%20Benson/%5BM%5D%20%20Breezin'%20%5B68618192%5D%20%5B1976%5D file:///home/rogvis/Music/Album/Philip%20Glass/%5BM%5D%20%20Kundun%20%5B380866%5D%20%5B1997%5D file:///home/rogvis/Music/Album file:///home/rogvis/Music/Album/Chet%20Baker
 filebrowser.fgcolor 
 filebrowser.fgcolor_selected 
 filebrowser.filter 
@@ -39,10 +39,11 @@ filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
 filechooser.lastdir file:///home/rogvis/Music/Album
-gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"463","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"77","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"378","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"75","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"401","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"77","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"378","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"75","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.eq.visible 0
 gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1" fill="1 1" homogeneous=0 {playtb {} seekbar {} } hsplitter locked=0 ratio=0.260284 pos=0 size2=0 {vsplitter locked=0 ratio=0.260733 pos=0 size2=0 {coverart {} filebrowser {} } vsplitter locked=0 ratio=0.758115 pos=0 size2=0 {tabbed_playlist hideheaders=0 width=1180 {} hbox expand="1" fill="1" homogeneous=0 {spectrum {} } } } } 
 gtkui.statusbar.visible 1
+gtkui.statusbar_seltime 0
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
 gtkui.titlebar_stopped_tf DeaDBeeF-%_deadbeef_version%
@@ -83,11 +84,11 @@ logwindow.geometry.h 200
 logwindow.geometry.w 400
 logwindow.geometry.x 40
 logwindow.geometry.y 40
-mainwin.geometry.h 1157
+mainwin.geometry.h 1193
 mainwin.geometry.maximized 0
 mainwin.geometry.w 1604
-mainwin.geometry.x 426
-mainwin.geometry.y 112
+mainwin.geometry.x 915
+mainwin.geometry.y 188
 mp3.id3v1_encoding iso8859-1
 mp3.id3v2_version 3
 mp3.write_id3v1 1
@@ -96,33 +97,50 @@ network.proxy.port 8080
 output_plugin pulseaudio
 playback.loop 1
 playback.volume 0.0000000
-playlist.current 1
-playlist.cursor.0 10
-playlist.cursor.1 0
-playlist.cursor.2 10
-playlist.cursor.3 6
-playlist.scroll.0 -10
-playlist.scroll.1 0
-playlist.scroll.2 -9
-playlist.scroll.3 0
+playlist.current 0
+playlist.cursor.0 -1
+playlist.cursor.1 5
+playlist.cursor.10 9
+playlist.cursor.11 9
+playlist.cursor.12 9
+playlist.cursor.2 2
+playlist.cursor.3 2
+playlist.cursor.4 9
+playlist.cursor.5 6
+playlist.cursor.6 20
+playlist.cursor.7 1
+playlist.cursor.8 9
+playlist.cursor.9 9
+playlist.scroll.0 644
+playlist.scroll.1 -5
+playlist.scroll.10 -9
+playlist.scroll.11 -9
+playlist.scroll.12 -9
+playlist.scroll.2 -2
+playlist.scroll.3 -2
+playlist.scroll.4 -9
+playlist.scroll.5 -6
+playlist.scroll.6 -20
+playlist.scroll.7 -15
+playlist.scroll.8 -9
+playlist.scroll.9 -9
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 New Playlist
-playlist.tab.00001 New Playlist
+playlist.tab.00000 Default
 prefwin.geometry.h 831
 prefwin.geometry.w 899
-prefwin.geometry.x 442
-prefwin.geometry.y 334
+prefwin.geometry.x 1507
+prefwin.geometry.y 496
 resume.paused 0
 resume.playlist 0
-resume.position 0.0000000
-resume.track 1
+resume.position 1.9504758
+resume.track 0
 streamer.16_to_24 0
 streamer.8_to_16 0
-streamer.override_samplerate 1
+streamer.override_samplerate 0
 streamer.samplerate 96000
-streamer.samplerate_mult_44 176400
-streamer.samplerate_mult_48 192000
-streamer.use_dependent_samplerate 1
+streamer.samplerate_mult_44 44100
+streamer.samplerate_mult_48 48000
+streamer.use_dependent_samplerate 0
 trkproperties.geometry.h 603
 trkproperties.geometry.w 928
 trkproperties.geometry.x 407
